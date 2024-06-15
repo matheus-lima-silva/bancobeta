@@ -8,11 +8,12 @@ import com.bancobeta.bancobeta.repository.ClienteRepository;
 import com.bancobeta.bancobeta.repository.ContaRepository;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
-@Component
+@Configuration
 public class DatabaseInitializer implements CommandLineRunner {
 
 
