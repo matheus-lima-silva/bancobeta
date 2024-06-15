@@ -98,5 +98,5 @@ public class ContaService {
         transacaoRepository.save(transacao);
     }
 
-    // ... (Outros métodos para transferência, pagamento, extrato, etc.)
+
 }
