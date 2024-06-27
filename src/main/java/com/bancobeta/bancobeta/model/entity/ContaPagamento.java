@@ -58,7 +58,8 @@ public class ContaPagamento extends Conta {
 
     @Override
     public double calcularTarifa() {
-        // Não há tarifas específicas para ContaPagamento
-        return 0.0;
+        int saquesPagos = Math.max(0, getTransacoes().size() - quantidadeSaquesGratuitos);
+        return saquesPagos * TARIFA_SAQUE;
     }
+
 }

@@ -50,6 +50,17 @@ public class ContaCorrente extends Conta {
     @Override
     public double calcularTarifa() {
 
-        return 0.0;
+        double tarifaChequeEspecial = 0.0;
+        if (getSaldo() < 0) {
+            double saldoNegativo = -getSaldo();
+            tarifaChequeEspecial = saldoNegativo * 0.01;
+        }
+
+
+        int saquesPagos = Math.max(0, getTransacoes().size() - quantidadeSaquesGratuitos);
+        double tarifaSaque = saquesPagos * TARIFA_SAQUE;
+
+        
+        return tarifaChequeEspecial + tarifaSaque;
     }
 }
