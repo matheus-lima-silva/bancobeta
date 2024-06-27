@@ -41,6 +41,9 @@ public class ExcecoesBancarias {
             super(mensagem);
         }
     }
-
-
+    public static class QuantidadeMaximaDeSaquesExcedidaException extends ExcecaoBancaria {
+        public QuantidadeMaximaDeSaquesExcedidaException(String message) {
+            super(message);
+        }
+    }
 }

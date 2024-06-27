@@ -3,7 +3,6 @@ package com.bancobeta.bancobeta.model.entity;
 import com.bancobeta.bancobeta.exception.ExcecoesBancarias;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

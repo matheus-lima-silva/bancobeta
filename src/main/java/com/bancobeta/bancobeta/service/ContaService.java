@@ -1,13 +1,14 @@
 package com.bancobeta.bancobeta.service;
 
 
-import com.bancobeta.bancobeta.exception.ExcecoesBancarias;
 import com.bancobeta.bancobeta.exception.ExcecoesBancarias.ContaInvalidaException;
 import com.bancobeta.bancobeta.exception.ExcecoesBancarias.SaldoInsuficienteException;
-import com.bancobeta.bancobeta.model.entity.*;
+import com.bancobeta.bancobeta.model.entity.Conta;
+import com.bancobeta.bancobeta.model.entity.ContaCorrente;
+import com.bancobeta.bancobeta.model.entity.ContaPagamento;
+import com.bancobeta.bancobeta.model.entity.Transacao;
 import com.bancobeta.bancobeta.repository.ContaRepository;
 import com.bancobeta.bancobeta.repository.TransacaoRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

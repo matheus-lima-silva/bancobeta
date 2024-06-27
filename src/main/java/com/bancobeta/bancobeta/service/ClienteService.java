@@ -3,7 +3,6 @@ package com.bancobeta.bancobeta.service;
 import com.bancobeta.bancobeta.exception.ExcecoesBancarias.ClienteNaoEncontradoException;
 import com.bancobeta.bancobeta.model.entity.Cliente;
 import com.bancobeta.bancobeta.repository.ClienteRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

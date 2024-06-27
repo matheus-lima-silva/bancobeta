@@ -1,9 +1,9 @@
 package com.bancobeta.bancobeta.controller;
 
-import com.bancobeta.bancobeta.exception.ExcecoesBancarias.*;
+import com.bancobeta.bancobeta.exception.ExcecoesBancarias.ContaInvalidaException;
+import com.bancobeta.bancobeta.exception.ExcecoesBancarias.SaldoInsuficienteException;
 import com.bancobeta.bancobeta.model.entity.Transacao;
 import com.bancobeta.bancobeta.service.TransacaoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
